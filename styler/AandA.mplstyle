@@ -1,0 +1,22 @@
+# Matplotlib style sheet for publication-quality plots
+
+# After copying this file to the mpl_configdir/stylelib directory, 
+# you can use this style by calling plt.style.use('AandA')
+# check what is your mpl_configdir with matplotlib.get_configdir(); 
+# you may need to create the stylelib directory.
+
+text.latex.preamble: \usepackage{amsmath},\usepackage{txfonts},\usepackage[T1]{fontenc}
+
+text.usetex : True
+font.size   : 9
+font.family : serif
+text.latex.unicode: True
+axes.unicode_minus: True
+
+### figure sizes
+## for the A&A article class
+# AandA_width = 3.543311946  # in inches = \hsize = 256.0748pt
+# AandA_full_width = 7.2712643025 # in inches = \hsize = 523.53 pt
+
+figure.figsize: 3.543311946, 2.6574839595
+savefig.bbox: tight
